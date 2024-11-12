@@ -2,6 +2,7 @@ package models
 
 import (
 	"github.com/google/uuid"
+    "time"
 )
 
 type User struct {
@@ -22,5 +23,5 @@ type FinancialTransaction struct {
     CategoryID  uuid.UUID `json:"category_id" db:"category_id"`
     Amount      float64   `json:"amount" db:"amount"`    
     Description string    `json:"description" db:"description"`
-    Date        string    `json:"date" db:"date"`       
+    Date        time.Time `json:"date" db:"date"`     
 }
