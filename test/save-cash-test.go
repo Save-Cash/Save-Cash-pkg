@@ -3,7 +3,7 @@ package testing
 import (
 	"fmt"
 	"testing"
-    "Save-Cash-pkg/models"
+    "github.com/Save-Cash/Save-Cash-pkg/models"
 )
 
 func TestGetAllUsers(t *testing.T) {
